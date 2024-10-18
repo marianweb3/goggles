@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #006cf7;
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: 400;
+}
+
+.button-shadow {
+  box-shadow: 0px 3.09px 0px 0px #000000;
+}
+
+.nav-shadow {
+  box-shadow: 5px 4px 0px 0px #000000;
+}
+
+.left-card-shadow {
+  box-shadow: 12px 8px 0px 0px #000000;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.download-shadow {
+  box-shadow: -5.31px 6.38px 0px 0px #000000;
+}
+
+@layer components {
+  .btn-primary {
+    @apply border-4 border-black px-6 py-2 font-bold max-w-[124px] w-full bg-white transition-all duration-300 ease-in-out;
+  }
+
+  .btn-primary:hover {
+    @apply bg-black text-white shadow-[4px_4px_0_0_rgba(0,0,0,1)];
+  }
+
+  .btn-primary:active {
+    @apply translate-x-1 translate-y-1 shadow-[0_0_0_0_rgba(0,0,0,1)];
+  }
+
+  .btn-download {
+    @apply border-4 border-black px-6 py-2 font-bold max-w-[124px] w-full download-shadow bg-white transition-all duration-300 ease-in-out;
+  }
+
+  .btn-download:hover {
+    @apply shadow-none;
+  }
+}
