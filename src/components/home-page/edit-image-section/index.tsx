@@ -18,6 +18,7 @@ export const glasses: Image[] = [
   { id: 5, src: "/glasses/5.PNG" },
   { id: 6, src: "/glasses/6.png" },
   { id: 7, src: "/glasses/7.png" },
+  { id: 8, src: "/glasses/8.png" },
 ];
 
 interface EditImageSectionProps {
