@@ -95,7 +95,7 @@ const EditImageSection = ({
             <LeftArrowIcon />
             <div
               ref={scrollbarTrackRef}
-              className="absolute left-5 right-5 h-[23px] top-1/2 transform -translate-y-1/2 cursor-pointer"
+              className="absolute left-5 right-5 h-[23px] top-1/2 transform -translate-y-1/2 cursor-pointer overflow-auto touch-pan-x"
               onMouseDown={handleScrollbarMouseDown}
             >
               <div
